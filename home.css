@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Serif', serif;
+}
+
+header{
+    background-image: url("/assets/prop/12.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+header .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 2000;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    left: 0px;
+    gap: 0px;
+    opacity: 0px;
+    height: 80px;
+}
+
+header .head .menu-icon{
+    margin-right: auto;
+}
+
+header .head .menu-icon img{
+    width: 40px;
+    height: auto;
+}
+
+header .head .material-symbols-outlined{
+    font-variation-settings:
+    'wght' 400,
+    'GRAD' 5,
+    'opsz' 24
+    'FILL' 0,
+}
+header .head .top-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+header .head .top-nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+header .head .top-nav button {
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-right: 50px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4300000071525574px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-size: 32px;
+
+}
+
+header .head .top-nav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin: auto;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 5px;
+    border-color: #4cd137;
+}
+header .head .head-link:hover, .head-link:active{
+    color: #ffffff; /* Use the current text color */
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 5px 0px 5px 0px;
+}
+
+/* Profile Styles */
+header .head .profile {
+    display: flex;
+    align-items: center;
+}
+
+header .head .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/*element aligns to the left down in the header section*/
+header .element{
+    position: absolute;
+    bottom: 50px;  /* Adjust this value to control distance from bottom */
+    left: 50px;    /* Adjust this value to control distance from left */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;     /* Space between content and buttons */
+
+}
+
+
+@media screen and (max-width: 780px) {
+    
+    
+    header {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header .head {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+        position: relative;
+    }
+
+    header .head .menu-icon {
+        align-self: flex-start;
+        margin-right: 0;
+    }
+
+    header .head .menu-icon img {
+        width: 30px;
+        height: auto;
+    }
+
+    header .head .top-nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        margin-right: 0;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header .head .top-nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .head .top-nav button {
+        width: 100%;
+        margin-right: 0;
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    header .head .top-nav input[type=text] {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+    }
+
+    header .head .profile {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+    header .element {
+        left: 20px;
+        bottom: 30px;
+        gap: 15px;
+    }
+
+    header .head .profile img {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Serif', serif;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-section h3 {
+    background: linear-gradient(90deg, rgb(0, 255, 17) 10%, rgba(255, 255, 255, 0.966) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-left: 0px;
+    color: transparent;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.footer-section ul {
+    list-style: none;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 119px;
+    border-radius: 30px;
+    width: 394px;
+    background: #D9D9D94D;
+    border: 2px solid #FFFFFF80;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-section h3 {
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-top: 1px;
+
+    }
+    
+    .footer-section ul {
+        margin-bottom: 5px;
+    }
+    
+    .footer-section ul li a {
+        font-size: 10px;
+        margin: 0;
+    }
+    
+    .buttons button {
+        height: 50px;
+        border-radius: 20px;
+        width: 200px;
+        font-size: 20px;
+    }
+    
+    .copyright {
+        font-size: 10px;
+    }
+}

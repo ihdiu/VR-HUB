@@ -1,0 +1,244 @@
+/* iPhone 13 Pro Max Specific Styles */
+:root {
+    
+    --device-height: 926px;
+    --safe-area-top: 47px;
+    --safe-area-bottom: 34px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 100vw;
+    max-width: 428px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.container h4 {
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container h4 i {
+    color: #007AFF;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.button-group button {
+    flex: 1;
+    width: 75px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.2s;
+}
+
+.button-group .favorite {
+    background-color: #F2F2F7;
+    color: #007AFF;
+    
+}
+
+.button-group .buy {
+    background-color: #007AFF;
+    color: white;
+    
+}
+
+.button-group button:active {
+    transform: scale(0.95);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.gallery__item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery__img:hover {
+    transform: scale(1.1);
+}
+
+.details {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.details h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.categories button {
+    padding: 10px 15px;
+    background-color: #F2F2F7;
+    border: none;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.details p {
+    text-align: center;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2F2F7;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.cart button {
+    padding: 12px 20px;
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #F2F2F7;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.part h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.part ul {
+    list-style: none;
+}
+
+.part ul li {
+    margin-bottom: 10px;
+}
+
+.part ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    width: calc(50% - 7.5px);
+}
+
+.buttons button i {
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+    font-size: 12px;
+}
+

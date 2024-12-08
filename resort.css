@@ -1,0 +1,528 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inria Serif', serif
+}
+
+
+body {
+    margin: 0;          /* Remove default margin */
+    padding: 0;         /* Remove default padding */
+    width: 100vw;       /* Make body span the full viewport width */
+    overflow-x: hidden; /* Prevent horizontal scroll, if needed */
+    background:#000000;
+    
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("/assets/prop/12.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+header .head{
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(20px);
+    padding: 15px 20px;
+    align-items: center;
+    height: 10%;
+}
+
+
+header .head .menu-icon{
+    align-items: start;
+    margin-right: auto;
+}
+
+header .head .menu-icon img{
+    height: 40px;
+    width: 40px;
+}
+header .head .top-nav{
+    justify-content: end;
+    gap: 20px;
+    padding: auto;
+}
+
+header .head .top-nav a{
+    color: bisque;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+header .head .top-nav button{
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-right: 50px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4300000071525574px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-size: 32px;
+}
+
+header .head .top-nav .profile {
+    display: flex;
+    align-items: center;
+}
+
+header .head .top-nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+header .head .top-nav input{
+    width: 300px;
+    padding: 6px;
+    border: 1px solid saddlebrown;
+    margin: auto;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5330ec;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2029a0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.title {
+
+    background: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid #fff;
+    position: absolute;
+    height: 350px;
+    width: 1010px;
+    top: 30%;
+    left: 206px;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 1.2; /* Adjusted for better spacing */
+    letter-spacing: -0.43px;
+    text-align: center;
+    text-decoration: none; /* Fixed underline settings */
+    font-family: 'Inria Serif';
+    display: flex; /* Flex for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.top10 {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.top10 h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 64.14px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-family: Ultra;
+}
+
+.top10 .img-container {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.top10 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.top10 .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.top10 .description h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.top10 .description h4 {
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.top10 .description h4 i {
+    margin-right: 8px;
+    color: #ff6347;
+}
+
+.best-offer {
+    background-color: #000;
+    padding: 40px 20px;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.best-offer h2 {
+    font-family: 'Ultra', serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.filter-tabs {
+    margin-bottom: 30px;
+    border-bottom: 5px solid #333;
+    padding-bottom: 10px;
+}
+
+.filter-tabs button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    margin-right: 30px;
+    padding: 5px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.filter-tabs button:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+}
+
+.filter-tabs button.active:after {
+    background: white;
+    padding: 0;
+}
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.hotel-card {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hotel-image {
+    width: 230px;
+    height: 265px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 7px solid rgba(0, 0, 0, 1);
+}
+
+.hotel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotel-info {
+    flex: 1;
+}
+.hotel-info h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 51.31px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-family: Ultra;
+}
+
+.hotel-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.discount {
+    color: white;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+.hotel-details {
+    color: #666;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.book-now {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .hotel-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.resort-list {
+    background-color: #000;
+    padding: 40px 20px;
+    color: white;
+}
+
+.resort-list h2 {
+    font-family: 'Ultra', serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.resort-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resort-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #333;
+}
+
+.resort-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.resort-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.resort-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resort-details {
+    flex-grow: 1;
+}
+
+.resort-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.resort-location {
+    color: #666;
+    font-size: 14px;
+    margin: 4px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.resort-location i {
+    color: #4CAF50;
+    font-size: 12px;
+}
+
+.book-now {
+    color: #4CAF50;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        height: auto;
+        min-height: 40vh;
+    }
+
+    header .head {
+        display: flex;
+        justify-content: space-between;
+        backdrop-filter: blur(20px);
+        padding: 10px;
+        align-items: center;
+        height: 50px;
+        
+    }
+
+    header .head .menu-icon {
+        justify-content: center;
+        align-items: start;
+        margin-right: auto;
+    }
+    
+    header .head .menu-icon img {
+        height: 20px;
+        width: 20px;
+    }
+
+    header .head .top-nav {
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        width: auto;
+    }
+
+    header .head .top-nav a {
+        color: bisque;
+        text-decoration: none;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    header .head .top-nav button {
+        display: none;
+    }
+
+    header .head .top-nav input {
+        width: 150px;
+        padding: 6px;
+        border: 1px solid rgb(255, 255, 255);
+        margin: auto;
+        margin-right: 16px;
+        font-size: 12px;
+        border-radius: 20px;
+        background: transparent;
+        height: 20px;
+    }
+    
+    header .head .top-nav .profile {
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    
+    header .head .top-nav .profile img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        
+    }
+
+    .title {
+        width: 90%;
+        height: 200px;
+        top: 150px;
+        left: 5%;
+        font-size: 48px;
+        padding: 10px;
+    }
+    
+    .filter-tabs button.active{
+        margin-bottom: 2px;
+
+    }
+
+    .resort-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+.forExample{
+    height: 321px;
+    gap: 0px;
+    border-radius: 30px;
+    border: 3px;
+    width: 672px;
+    background: rgba(255, 255, 255, 0.07);
+}
+
