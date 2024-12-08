@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    
+    background: linear-gradient(90.59deg, rgba(104, 255, 209, 0.5) 0.45%, rgba(193, 255, 109, 0.5) 97.34%);
+    margin: 0;
+}
+header{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    align-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+header .head{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+    height: 10%;
+    
+    
+}
+header .head .menu-icon{
+    align-items: start;
+    margin-right: auto;
+}
+
+header .head .menu-icon img{
+    height: 40px;
+    width: 40px;
+}
+header .head .top-nav{
+    justify-content: end;
+    gap: 20px;
+    padding: auto;
+}
+header .head .top-nav a{
+    color: bisque;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+header .head .top-nav button{
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-right: 50px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4300000071525574px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-size: 32px;
+}
+
+header .head .top-nav .profile {
+    display: flex;
+    align-items: center;
+}
+
+header .head .top-nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+header .head .top-nav input{
+    width: 300px;
+    padding: 6px;
+    border: 1px solid #f5ebe4;
+    margin: auto;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 5px;
+    background: transparent;
+}
+header .head .top-nav input::placeholder {
+    color: #f5ebe4;
+    opacity: 1;
+}
+
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    /* Aspect ratio 16:9 */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 920px;
+    height: 540px;
+    border-radius: 20px;
+}
+
+.intro {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* semi-transparent black background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro h2 {
+    color: white;
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+   
+}
+
+.intro p {
+    color: white;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    
+    /* slightly transparent text */
+}
+
+/* If you want to add hover effect */
+.intro:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.carousel-container {
+    position: relative;
+    width: 800px;
+    margin: 20px auto;
+    height: 400px; /* Fixed height */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000; /* visible background */
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /*display: ;  Hide all slides by default */
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    display: block; /* Show active slide */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Make controls more visible */
+.carousel-controls button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-controls .prev {
+    left: 10px;
+}
+
+.carousel-controls .next {
+    right: 10px;
+}
+

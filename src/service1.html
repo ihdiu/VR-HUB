@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Management Services</title>
+    <style>
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 10vh;
+            width: 100%;
+        }
+
+        header .head {
+            display: flex;
+            justify-content: space-between;
+            backdrop-filter: blur(20px);
+            padding: 15px 20px;
+            align-items: center;
+            height: 80px;
+        }
+
+        header .head .menu-icon {
+            align-items: start;
+            margin-right: auto;
+        }
+
+        header .head .menu-icon img {
+            height: 40px;
+            width: 40px;
+        }
+
+        header .head .top-nav {
+            justify-content: end;
+            gap: 20px;
+            padding: auto;
+            margin-right: 50px;
+        }
+
+        header .head .top-nav a {
+            color: bisque;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        header .head .top-nav button {
+            padding: 8px 16px;
+            border-radius: 15px;
+            border: none;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            margin-right: 50px;
+            font-family: Inter;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: -0.4300000071525574px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            font-size: 32px;
+        }
+
+        header .head .top-nav .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        header .head .top-nav .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        header .head .top-nav input {
+            width: 300px;
+            padding: 6px;
+            border: 1px solid saddlebrown;
+            margin: auto;
+            margin-right: 16px;
+            font-size: 17px;
+            border-radius: 5px;
+            background: transparent;
+        }
+
+        .service-header {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .service-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Add header section with navigation -->
+    <header>
+        <div class="head">
+            <div class="menu-icon"><a href="index.html"><img src="/assets/logo.png" alt="logo.png"></a></div>
+            <div class="top-nav">
+                <button><i class="fa fa-download" aria-hidden="true"></i> Get App</button>
+                <input type="text" placeholder="Search..">
+                <a href="index.html" class="head-link">Home</a>
+                <a href="booknow.html" class="head-link">Book Now</a>
+                <a href="vrtour.html" class="head-link">About VR Tour</a>
+            </div>
+            <div class="profile">
+                <a href="loginn.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="service-header">
+        <h1>Tour Management Services</h1>
+        <p>Professional tour planning and execution for artists and performers</p>
+    </div>
+
+    <div class="service-content">
+        <h2>What We Offer</h2>
+        <p>Our comprehensive tour management services ensure smooth and successful events from start to finish.</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Tour Planning</h3>
+                <p>Strategic route planning, venue selection, and scheduling optimization for maximum efficiency and
+                    impact.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Logistics Management</h3>
+                <p>Handling transportation, accommodation, equipment, and crew coordination throughout the tour.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Budget Management</h3>
+                <p>Detailed financial planning, cost control, and revenue optimization for tour profitability.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>On-Site Coordination</h3>
+                <p>Professional event management and real-time problem solving during performances.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Vendor Relations</h3>
+                <p>Managing relationships with venues, suppliers, and local service providers.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Tour Marketing</h3>
+                <p>Promotional strategy development and execution to maximize ticket sales and engagement.</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Plan Your Tour?</h2>
+            <p>Let's discuss how we can make your tour a success</p>
+            <a href="#contact" class="cta-button">Contact Us Now</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Process</title>
+    <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Book Resort
+        </h2>
+        <h3>Resort Name</h3>
+        <h4>Resort Location</h4>
+
+        
+        <div class="members">
+            
+            <label for="adult">Adult</label>
+            <input type="number" name="adult" id="adult">
+            <label for="child">child</label>
+            <input type="number" name="child" id="child">
+        </div>
+        <div class="duration">
+            <label for="starting">Starting</label>
+            <input type="date" name="starting" id="starting">
+            <label for="ending">Ending</label>
+            <input type="date" name="ending" id="ending">
+        </div>
+        <button><a href="#billing" style="color: white; text-decoration: none;">Proceed</a></button>
+    </div>
+
+    <div class="container" id="billing">
+        <h2>
+            Book Resort
+        </h2>
+        <h3>Resort Name</h3>
+        <h4>Resort Location</h4>
+
+        <div class="bill-info">
+            
+            <label for="card-number">Card Number</label>
+            <input type="text" name="card-number" id="card-number">
+            <label for="cvv">CVV</label>
+            <input type="text" name="cvv" id="cvv">
+            <label for="exp">Exp. Date</label>
+            <input type="text" name="exp" id="exp">
+        </div>
+        <button><a href="#confirm" style="color: white; text-decoration: none;">Validate</a></button>
+    </div>
+    <div class="container" id="confirm">
+        
+        <h2>
+            Book Resort
+        </h2>
+        <h3>Resort Name</h3>
+        <h4>Resort Location</h4>
+
+        <div class="info">
+            <p>For 5 Days</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="accpet"><input type="checkbox"> <p>Accept the <a href="#">Terms and Conditions</a></p></div>
+        <button><a href="done.txt" style="color: white; text-decoration: none;">Confirm</button>
+    </div>
+
+
+</body>
+</html>
